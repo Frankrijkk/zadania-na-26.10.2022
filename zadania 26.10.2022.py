@@ -31,7 +31,27 @@ def ciagi():
 		print(a1*(1-q**sum)/(1-q))
 ciagi()
 
+def sklep():
 
+	godzina=float(input("która godzina?"))	minuty=float(input("ile minut?"))
+
+	if godzina<18 and godzina>10:
+
+		print(True)
+
+	elif godzina ==10:
+
+		if minuty>30:
+
+			print(True)
+
+	elif godzina==18:
+
+		if minuty<30:
+
+			print(True)
+
+sklep()
 
 def temperatura():
 	inp=float(input("podaj temperature w kelwinach: "))
